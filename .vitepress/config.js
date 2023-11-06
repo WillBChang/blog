@@ -5,17 +5,17 @@ import { getPosts } from './theme/serverUtils'
 const pageSize = 10
 
 export default defineConfig({
-    title: 'vitepress',
+    title: 'Will B.C.',
     base: '/',
     cacheDir: './node_modules/vitepress_cache',
     description: 'vitepress,blog,blog-theme',
     ignoreDeadLinks: true,
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://github.com/airene/vitepress-blog-pure', //copyright link
+        website: 'https://github.com/willbchang/blog',
         // 评论的仓库地址
         comment: {
-            repo: 'airene/vitepress-blog-pure',
+            repo: 'willbchang/blog',
             themes: 'github-light',
             issueTerm: 'pathname'
         },
@@ -23,8 +23,8 @@ export default defineConfig({
             { text: 'Home', link: '/' },
             { text: 'Archives', link: '/pages/archives' },
             { text: 'Tags', link: '/pages/tags' },
-            { text: 'About', link: '/pages/about' }
-            // { text: 'Airene', link: 'http://airene.net' }  -- External link test
+            { text: 'About', link: '/pages/about' },
+            // { text: 'WillBC', link: 'http://willbc.com' }
         ],
         search: {
             provider: 'local',
