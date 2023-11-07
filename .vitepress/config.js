@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { getPosts } from './theme/serverUtils'
 
-//每页的文章数量
 const pageSize = 10
 
 export default defineConfig({
@@ -12,8 +11,7 @@ export default defineConfig({
     ignoreDeadLinks: true,
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://github.com/willbchang/blog',
-        // 评论的仓库地址
+        website: 'https://willbc.com',
         comment: {
             repo: 'willbchang/blog',
             themes: 'github-light',
@@ -30,8 +28,8 @@ export default defineConfig({
             provider: 'local',
         },
         //outline:[2,3],
-        outlineTitle: '文章摘要',
-        socialLinks: [{ icon: 'github', link: 'https://github.com/airene/vitepress-blog-pure' }]
+        outlineTitle: 'Outline',
+        socialLinks: [{ icon: 'github', link: 'https://github.com/willbchang/blog' }]
     },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
 
